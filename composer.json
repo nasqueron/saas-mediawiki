@@ -1,0 +1,29 @@
+{
+    "name": "nasqueron/saas-mediawiki",
+    "description": "SaaS configuration entry point for MediaWiki",
+    "keywords": [
+      "nasqueron",
+      "SAAS",
+      "mediawiki",
+      "farm"
+    ],
+    "type": "project",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Sébastien Santoro",
+            "email": "dereckson@espace-win.org"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "dev-master",
+        "nasqueron/saas-service": "^0.0.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "Nasqueron\\SAAS\\MediaWiki\\": "src/",
+        "Nasqueron\\SAAS\\MediaWiki\\Configuration\\": "config/",
+        "Nasqueron\\SAAS\\MediaWiki\\Tests\\": "tests/"
+      }
+    }
+}
