@@ -40,7 +40,7 @@ class Configuration {
         $prefix = "saasUse" . $type;
         $len = strlen($prefix);
         foreach ($GLOBALS as $key => $value) {
-            if (substr($key, 0, $len) === $prefix) {
+            if (substr($key, 0, $len) === $prefix && $value) {
                 $resources[] = substr($key, $len);
             }
         }
