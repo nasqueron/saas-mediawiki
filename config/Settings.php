@@ -120,7 +120,6 @@ class Settings extends MappableSettings {
                     '*' => [
                         'edit' => false,
                         'createaccount' => false,
-                        'foo' => true,
                     ],
                 ]
             ],
