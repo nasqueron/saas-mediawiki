@@ -18,6 +18,10 @@ class Settings extends MappableSettings {
             /// MediaWiki Core
             ///
 
+            'wgAllowTitlesInSVG' => [
+                'default' => true,
+            ],
+
             'wgDBprefix' => [
                 'default' => '',
 
@@ -58,6 +62,12 @@ class Settings extends MappableSettings {
                 'default' => true,
             ],
 
+            '+wgFileExtensions' => [
+                'default' => [
+                    'svg',
+                ]
+            ],
+
             'wgLanguageCode' => [
                 'default' => 'en',
                 'arsmagica' => 'fr',
@@ -96,6 +106,10 @@ class Settings extends MappableSettings {
                 'arsmagica' => 'Ars Magica',
                 'utopia' => 'Utopia',
                 'wolfplex' => 'Wolfplex',
+            ],
+
+            'wgSVGConverter' => [
+                'default' => 'rsvg',
             ],
 
             'wgUseFileCache' => [
