@@ -160,6 +160,10 @@ class Settings extends MappableSettings {
                 'default' => true,
             ],
 
+            'saasUseExtensionPoem' => [
+                'default' => true,
+            ],
+
             'saasUseExtensionWolfplexMessages' => [
                 'default' => false,
                 'wolfplex' => true,
