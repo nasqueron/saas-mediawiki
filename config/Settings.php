@@ -152,11 +152,41 @@ class Settings extends MappableSettings {
             ],
 
             ///
-            /// Skins and extensions
+            /// ContactPage extension
+            ///
+
+            'wgContactConfig' => [
+                'wolfplex' => [
+                    'default' => [
+                        "RecipientUser" => 'Spike',
+                        "SenderEmail" => null,
+                        "SenderName" => "Contact Form on Wolfplex",
+                        "RequireDetails" => false,
+                        "IncludeIP" => false,
+                        "RLModules" => [],
+                        "RLStyleModules" => [],
+                        "AdditionalFields" => [
+                            "Text" => [
+                                "label-message" => "emailmessage",
+                                "type" => "textarea",
+                                "required" => true,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+
+            ///
+            /// Skins and extensions to load
             ///
 
             'saasUseExtensionCite' => [
                 'default' => true,
+            ],
+
+            'saasUseExtensionContactPage' => [
+                'default' => false,
+                'wolfplex' => true,
             ],
 
             'saasUseExtensionParserFunctions' => [
