@@ -54,7 +54,9 @@ class Settings extends MappableSettings {
             'wgExtraNamespaces' => [
                 'wolfplex' => [
                     320 => 'Bulletin',
+                    321 => 'Discussion_Bulletin',
                     322 => 'Event',
+                    323 => 'Discussion_Event',
                 ]
             ],
 
