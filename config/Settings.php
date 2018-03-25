@@ -89,7 +89,7 @@ class Settings extends MappableSettings {
                 'wolfplex' => 'Wolfplex',
             ],
 
-            'wgNamespacesWithSubpages' => [
+            '+wgNamespacesWithSubpages' => [
                 'wolfplex' => [
                     NS_MAIN => true,
                 ],
