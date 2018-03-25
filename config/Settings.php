@@ -92,6 +92,7 @@ class Settings extends MappableSettings {
             '+wgNamespacesWithSubpages' => [
                 'wolfplex' => [
                     NS_MAIN => true,
+                    320 => true,              // Bulletin
                 ],
                 'agora' => [
                     NS_MAIN => true,
