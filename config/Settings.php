@@ -104,6 +104,7 @@ class Settings extends MappableSettings {
             'wgLogo' => [
                 'default' => '/images/b/bc/Wiki.png',
                 'agora' => 'https://assets.nasqueron.org/logos/logo-main-133px.png',
+                'arsmagica' => '/images/3/33/ArsMagica.png',
                 'wolfplex' => '/img/logo135.png',
                 'utopia' => '/img/BoatDesaturedBlueUtopiaIcon_135x135.png',
             ],
