@@ -184,6 +184,7 @@ class Settings extends MappableSettings {
 
             'saasLicense' => [
                 'default' => 'CC-BY 4.0',
+                'utopia' => 'CC-BY-NC-SA 3.0', // T1376
             ],
 
             'saasUrlScheme' => [

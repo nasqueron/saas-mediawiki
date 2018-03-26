@@ -30,6 +30,12 @@ class CommonSettings {
                     $settings['wgRightsIcon'][$key] = 'https://i.creativecommons.org/l/by/4.0/88x31.png';
                     break;
 
+                case 'CC-BY-NC-SA 3.0':
+                    $settings['wgRightsUrl'][$key] = 'https://creativecommons.org/licenses/by-nc-sa/3.0/';
+                    $settings['wgRightsText'][$key] = 'Attribution-NonCommercial-ShareAlike 3.0 Unported';
+                    $settings['wgRightsIcon'][$key] = 'https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png';
+                    break;
+
                 default:
                     throw new ConfigurationException("License unknown: $license");
             }
