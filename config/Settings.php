@@ -51,6 +51,14 @@ class Settings extends MappableSettings {
                 'wolfplex' => true,
             ],
 
+            'wgEnotifUserTalk' => [
+                'default' => true,
+            ],
+
+            'wgEnotifWatchlist' => [
+                'default' => true,
+            ],
+
             'wgExtraNamespaces' => [
                 'wolfplex' => [
                     320 => 'Bulletin',
