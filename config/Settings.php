@@ -209,6 +209,10 @@ class Settings extends MappableSettings {
             /// Skins and extensions to load
             ///
 
+            'saasUseExtensionCategoryTree' => [
+                'default' => true,
+            ],
+
             'saasUseExtensionCite' => [
                 'default' => true,
             ],
