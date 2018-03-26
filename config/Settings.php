@@ -189,6 +189,10 @@ class Settings extends MappableSettings {
                 'wolfplex' => true,
             ],
 
+            'saasUseExtensionGadgets' => [
+                'default' => true,
+            ],
+
             'saasUseExtensionParserFunctions' => [
                 'default' => true,
             ],
