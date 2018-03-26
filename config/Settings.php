@@ -127,6 +127,11 @@ class Settings extends MappableSettings {
                 'default' => 'mediawiki-saas-no-reply@nasqueron.org',
             ],
 
+            'wgRestrictDisplayTitle' => [
+                'default' => true,
+                'wolfplex' => false,
+            ],
+
             'wgSitename' => [
                 'default' => 'Wiki',
                 'agora' => 'Nasqueron Agora',
