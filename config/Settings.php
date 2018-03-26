@@ -167,7 +167,13 @@ class Settings extends MappableSettings {
                         'edit' => false,
                         'createaccount' => false,
                     ],
-                ]
+                ],
+                '+utopia' => [
+                    'confirmed' => [
+                        "autoconfirmed" => true,
+                        "upload" => true,
+                    ],
+                ],
             ],
 
             'saasLicense' => [
