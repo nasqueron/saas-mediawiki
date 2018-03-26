@@ -169,6 +169,10 @@ class Settings extends MappableSettings {
                         'edit' => false,
                         'createaccount' => false,
                     ],
+                    'sysop' => [
+                        'deletelogentry'  => true,
+                        'deleterevision'  => true,
+                    ],
                 ],
                 '+utopia' => [
                     'confirmed' => [
