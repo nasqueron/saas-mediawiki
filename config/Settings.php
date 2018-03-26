@@ -105,6 +105,7 @@ class Settings extends MappableSettings {
                 'default' => '/images/b/bc/Wiki.png',
                 'agora' => 'https://assets.nasqueron.org/logos/logo-main-133px.png',
                 'wolfplex' => '/img/logo135.png',
+                'utopia' => '/img/BoatDesaturedBlueUtopiaIcon_135x135.png',
             ],
 
             'wgMetaNamespace' => [
