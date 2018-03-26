@@ -85,6 +85,22 @@ class Settings extends MappableSettings {
                 'wolfplex' => 'fr',
             ],
 
+            'wgLocalInterwikis' => [
+                'agora' => [
+                    'agora',
+                ],
+                'arsmagica' => [
+                    'arsm',
+                    'arsmagica',
+                ],
+                'utopia' => [
+                    'utopia',
+                ],
+                'wolfplex' => [
+                    'wolfplex',
+                ],
+            ],
+
             'wgLogo' => [
                 'default' => '/images/b/bc/Wiki.png',
                 'agora' => 'https://assets.nasqueron.org/logos/logo-main-133px.png',
