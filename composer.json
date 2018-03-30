@@ -17,7 +17,8 @@
     ],
     "require": {
         "vlucas/phpdotenv": "dev-master",
-        "nasqueron/saas-service": "^0.0.1"
+        "nasqueron/saas-service": "^0.0.1",
+        "keruald/commands": "^0.0.1"
     },
     "autoload": {
       "psr-4": {

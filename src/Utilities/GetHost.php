@@ -6,18 +6,20 @@ use Nasqueron\SAAS\MediaWiki\Configuration\Instances;
 use Nasqueron\SAAS\MediaWiki\Configuration\Settings;
 use Nasqueron\SAAS\InstanceNotFoundException;
 
+use Keruald\Commands\Command;
+
 class GetHost extends Command {
 
     public const EXIT_HOST_NOT_FOUND = 2;
 
     public function main () : int {
-        if ($this->argc < 2) {
+        if ($this->getArgc() < 2) {
             self::usage();
             return 1;
         }
 
         try {
-            $this->display->out($this->search($this->argv[1]));
+            $this->display->out($this->search($this->getArgv()[1]));
         } catch (InstanceNotFoundException $exception) {
             $this->display->error("Host not found.");
             return self::EXIT_HOST_NOT_FOUND;
