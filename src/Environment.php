@@ -54,6 +54,6 @@ class Environment {
     public static function isBSD () : bool {
         static $system;
         $system = php_uname("s");
-        return $system == "FreeBSD" || $system == "OpenBSD" || $system == "NetBSD";
+        return substr($system, -3) === "BSD" || $system === "DragonFly";
     }
 }
