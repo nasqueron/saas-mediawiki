@@ -73,7 +73,7 @@ if ($saasUseScribunto) {
 CommonSettings::enableLog();
 
 #   -------------------------------------------------------------
-#   Paths and settings defined in enviroment
+#   Paths and settings defined in environment
 #   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $wgScript = "{$wgScriptPath}/index.php";
