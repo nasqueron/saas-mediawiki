@@ -38,8 +38,7 @@ class Service extends BaseService {
     /**
      * @return Service
      */
-    public static function preload()
-    {
+    public static function preload() {
         if (self::$service === null) {
 
             self::$service = new self;
