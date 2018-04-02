@@ -79,6 +79,8 @@ CommonSettings::enableLog();
 $wgScript = "{$wgScriptPath}/index.php";
 $wgSecretKey = $_ENV["MEDIAWIKI_SECRET_KEY"];
 
+$wgServer = "https://" . $service->getHost();
+
 $wgCacheDirectory = $serviceConfiguration->getCacheDir();
 $wgFileCacheDirectory = $wgCacheDirectory . "/pages";
 $wgUploadDirectory = $serviceConfiguration->getDataStoreDir() . "/images";
