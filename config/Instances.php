@@ -14,6 +14,7 @@ class Instances extends InstancesRepository {
             "arsmagica.espace-win.org" => "arsmagica",
             "utopia.espace-win.org" => "utopia",
             "www.wolfplex.org" => "wolfplexdb",
+            'wikis.nasqueron.org' => 'wikis',
         ];
     }
 
@@ -25,7 +26,11 @@ class Instances extends InstancesRepository {
                 "www.wolfplex.be",
                 "wiki.wolfplex.org",
                 "wiki.wolfplex.be",
-            ]
+            ],
+
+            "wikis" => [
+                'mediawiki.test.ook.space',
+            ],
         ];
     }
 
