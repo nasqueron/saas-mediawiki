@@ -12,6 +12,7 @@ class Instances extends InstancesRepository {
 
             "agora.nasqueron.org" => "nasqueron_wiki",
             "arsmagica.espace-win.org" => "arsmagica",
+            'cosmo.espace-win.org' => 'inidal_wiki',
             "utopia.espace-win.org" => "utopia",
             "www.wolfplex.org" => "wolfplexdb",
             'wikis.nasqueron.org' => 'wikis',

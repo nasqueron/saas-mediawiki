@@ -7,6 +7,7 @@ class Settings extends MappableSettings {
     static public function getDatabaseMap () : array {
         return [
             'agora' => 'nasqueron_wiki',
+            'cosmo' => 'inidal_wiki',
             'wolfplex' => 'wolfplexdb',
         ];
     }
@@ -34,6 +35,7 @@ class Settings extends MappableSettings {
             'wgDefaultSkin' => [
                 'default' => 'vector',
                 'agora' => 'timeless',
+                'cosmo' => 'timeless',
                 // TODO: find utopia skin
             ],
 
@@ -138,6 +140,7 @@ class Settings extends MappableSettings {
                 'default' => 'Wiki',
                 'agora' => 'Nasqueron Agora',
                 'arsmagica' => 'Ars Magica',
+                'cosmo' => 'Cosmo',
                 'utopia' => 'Utopia',
                 'wolfplex' => 'Wolfplex',
             ],
@@ -174,6 +177,18 @@ class Settings extends MappableSettings {
                         'deleterevision'  => true,
                     ],
                 ],
+                'cosmo' => [
+                    '*' => [
+                        // Private wiki
+                        'read' => false,
+                        'edit' => false,
+                        'createaccount' => false,
+                    ],
+                    'sysop' => [
+                        'deletelogentry'  => true,
+                        'deleterevision'  => true,
+                    ],
+                ],
                 '+utopia' => [
                     'confirmed' => [
                         "autoconfirmed" => true,
@@ -191,6 +206,7 @@ class Settings extends MappableSettings {
                 'default' => 'wiki',
                 'agora' => 'root',
                 'arsmagica' => 'root',
+                'cosmo' => 'root',
             ],
 
             ///
@@ -247,9 +263,19 @@ class Settings extends MappableSettings {
                 'default' => true,
             ],
 
+            // This extension is already included with Scribunto.
+            'saasUseExtensionWikiEditor' => [
+                'default' => false,
+                'cosmo' => true,
+            ],
+
             'saasUseExtensionWolfplexMessages' => [
                 'default' => false,
                 'wolfplex' => true,
+            ],
+
+            'saasUseSkinMinervaNeue' => [
+                'default' => true,
             ],
 
             'saasUseSkinMonoBook' => [
