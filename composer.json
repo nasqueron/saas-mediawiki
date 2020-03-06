@@ -20,6 +20,10 @@
         "nasqueron/saas-service": "^0.0.1",
         "keruald/commands": "^0.0.1"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*",
+        "nasqueron/codestyle": "^0.0.1"
+    },
     "autoload": {
       "psr-4": {
         "Nasqueron\\SAAS\\MediaWiki\\": "src/",
