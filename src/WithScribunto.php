@@ -9,7 +9,7 @@ trait WithScribunto {
         self::registerScribuntoConfiguration();
     }
 
-    private function registerScribuntoConfiguration () : void {
+    private static function registerScribuntoConfiguration () : void {
         foreach (self::getScribuntoConfiguration() as $setting => $value) {
             // TODO: use ??= here when available.
             if (!isset($GLOBALS['wg' . $setting])) {
