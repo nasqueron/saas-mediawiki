@@ -18,7 +18,7 @@ class Environment {
     public static function load () : void {
         if (!self::$isLoaded) {
             $directory = self::getDirectory();
-            $dotenv = new Dotenv($directory);
+            $dotenv = Dotenv::createImmutable($directory);
             $dotenv->safeLoad();
             try {
                 $dotenv->required(self::getRequiredVariables());
