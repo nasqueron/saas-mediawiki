@@ -26,7 +26,6 @@ $serviceConfiguration = $service->getConfiguration();
 $wgLocalDatabases = $serviceConfiguration->getLocalDatabases();
 
 $wgConf->wikis = $wgLocalDatabases;
-$wgConf->localVHosts = [ 'localhost' ];
 $wgConf->settings = $serviceConfiguration->getSettings();
 $wgConf->suffixes = $wgLocalDatabases;
 $wgConf->siteParamsCallback = 'Nasqueron\SAAS\MediaWiki\Hooks::onSiteParameters';
@@ -80,6 +79,7 @@ $wgScript = "{$wgScriptPath}/index.php";
 $wgSecretKey = $_ENV["MEDIAWIKI_SECRET_KEY"];
 
 $wgServer = "https://" . $service->getHost();
+$wgLocalVirtualHosts = [ "localhost" ];
 
 $wgCacheDirectory = $serviceConfiguration->getCacheDir();
 $wgFileCacheDirectory = $wgCacheDirectory . "/pages";
