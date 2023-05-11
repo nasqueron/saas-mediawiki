@@ -70,6 +70,22 @@ class Settings extends MappableSettings {
                 ]
             ],
 
+            'wgContentNamespaces' => [
+                'wolfplex' => [
+                    320, // Bulletin
+                    322, // Event
+                ],
+            ],
+
+            'wgNamespacesToBeSearchedDefault' => [
+                'wolfplex' => [
+                    NS_MAIN => true,
+
+                    320 => true, // Bulletin
+                    322 => true, // Event
+                ],
+            ],
+
             'wgUseInstantCommons' => [
                 'default' => true,
             ],
