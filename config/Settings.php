@@ -153,6 +153,11 @@ class Settings extends MappableSettings {
                 ],
             ],
 
+            'wgNoFollowLinks' => [
+                'default' => true,
+                'agora' => false,
+            ],
+
             'wgPasswordSender' => [
                 'default' => 'mediawiki-saas-no-reply@nasqueron.org',
             ],
