@@ -23,6 +23,16 @@ class Settings extends MappableSettings {
                 'default' => true,
             ],
 
+            'wgAllowUserCss' => [
+                'default' => false,
+                'agora' => true, // T1889
+            ],
+
+            'wgAllowUserJs' => [
+                'default' => false,
+                'agora' => true, // T1889
+            ],
+
             'wgDBprefix' => [
                 'default' => '',
 
