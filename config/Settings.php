@@ -266,6 +266,20 @@ class Settings extends MappableSettings {
             ],
 
             ///
+            /// WarnNotRecentlyUpdated extension
+            ///
+
+            'wgWarnNotRecentlyUpdatedDelay' => [
+                'agora' => 365 * 24 * 3_600, // one year - T1893
+            ],
+
+            'wgWarnNotRecentlyUpdatedPages' => [
+                NS_MAIN => [
+                    "Operations grimoire/" => "old-NOG", // T1893
+                ],
+            ],
+
+            ///
             /// Skins and extensions to load
             ///
 
@@ -292,6 +306,11 @@ class Settings extends MappableSettings {
 
             'saasUseExtensionPoem' => [
                 'default' => true,
+            ],
+
+            'saasUseExtensionWarnNotRecentlyUpdated' => [
+                'default' => false,
+                'agora' => true, // T1893
             ],
 
             // This extension is already included with Scribunto.
