@@ -274,8 +274,10 @@ class Settings extends MappableSettings {
             ],
 
             'wgWarnNotRecentlyUpdatedPages' => [
-                NS_MAIN => [
-                    "Operations grimoire/" => "old-NOG", // T1893
+                'agora' => [
+                    NS_MAIN => [
+                        "Operations grimoire/" => "old-NOG", // T1893
+                    ],
                 ],
             ],
 
