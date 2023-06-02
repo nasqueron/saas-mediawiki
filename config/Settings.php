@@ -137,6 +137,11 @@ class Settings extends MappableSettings {
                 'utopia' => '/img/BoatDesaturedBlueUtopiaIcon_135x135.png',
             ],
 
+            'wgMaxImageArea' => [
+                'default' => 12_500_000,
+                'agora' => 15_000_000, // T1895
+            ],
+
             'wgMetaNamespace' => [
                 'default' => false,
                 'utopia' => 'Utopia',
