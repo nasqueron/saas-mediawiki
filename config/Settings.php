@@ -103,7 +103,12 @@ class Settings extends MappableSettings {
             '+wgFileExtensions' => [
                 'default' => [
                     'svg',
-                ]
+                ],
+                'wolfplex' => [
+                    'pdf',
+                    'svg',
+                ],
+
             ],
 
             'wgLanguageCode' => [
