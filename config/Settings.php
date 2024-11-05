@@ -218,6 +218,12 @@ class Settings extends MappableSettings {
                         'deleterevision'  => true,
                     ],
                 ],
+                '+agora' => [
+                    'confirmed' => [
+                        "autoconfirmed" => true,
+                        "upload" => true,
+                    ],
+                ],
                 'cosmo' => [
                     '*' => [
                         // Private wiki
