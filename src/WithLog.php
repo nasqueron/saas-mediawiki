@@ -49,7 +49,7 @@ trait WithLog {
                 'handlers' => [
                     'stream' => [
                         'class' => '\\Monolog\\Handler\\StreamHandler',
-                        'args' => [ self::getLogPath() ],
+                        'args' => [ self::getLogPath(), LogLevel::Error->value ],
                         'formatter' => 'line',
                     ],
                 ],
