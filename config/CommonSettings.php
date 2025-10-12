@@ -25,7 +25,7 @@ class CommonSettings {
         foreach ($licenses as $key => $license) {
             switch ($license) {
                 case 'CC-BY 4.0':
-                    $settings['wgRightsUrl'][$key] = 'http://creativecommons.org/licenses/by/4.0/';
+                    $settings['wgRightsUrl'][$key] = 'https://creativecommons.org/licenses/by/4.0/';
                     $settings['wgRightsText'][$key] = 'Creative Commons Attribution 4.0 International License';
                     $settings['wgRightsIcon'][$key] = 'https://i.creativecommons.org/l/by/4.0/88x31.png';
                     break;
