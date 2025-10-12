@@ -11,7 +11,7 @@ class Settings extends MappableSettings {
         return [
             'agora' => 'nasqueron_wiki',
             'cosmo' => 'inidal_wiki',
-            'wolfplex' => 'wolfplexdb',
+            'wolfplex' => 'wolfplex_wiki',
         ];
     }
 
@@ -52,7 +52,6 @@ class Settings extends MappableSettings {
                 // Legacy installations
                 'arsmagica' => 'arsm_',
                 'utopia' => 'wiki_',
-                'wolfplex' => 'mw_', // shared database
             ],
 
             'wgDefaultSkin' => [

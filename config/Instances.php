@@ -14,7 +14,7 @@ class Instances extends InstancesRepository {
             "arsmagica.espace-win.org" => "arsmagica",
             'cosmo.espace-win.org' => 'inidal_wiki',
             "utopia.espace-win.org" => "utopia",
-            "www.wolfplex.org" => "wolfplexdb",
+            "www.wolfplex.org" => "wolfplex_wiki",
             'wikis.nasqueron.org' => 'wikis',
         ];
     }
@@ -23,7 +23,7 @@ class Instances extends InstancesRepository {
         return [
             // Format: Database => [ hosts ]
 
-            "wolfplexdb" => [
+            "wolfplex_wiki" => [
                 "www.wolfplex.be",
                 "wiki.wolfplex.org",
                 "wiki.wolfplex.be",
