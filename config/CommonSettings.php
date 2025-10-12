@@ -2,6 +2,7 @@
 
 namespace Nasqueron\SAAS\MediaWiki\Configuration;
 
+use Keruald\OmniTools\DataTypes\Option\Option;
 use Nasqueron\SAAS\ConfigurationException;
 use Nasqueron\SAAS\MediaWiki\WithExecutablesPathsFix;
 use Nasqueron\SAAS\MediaWiki\WithLog;
@@ -12,6 +13,8 @@ class CommonSettings {
     use WithExecutablesPathsFix;
     use WithScribunto;
     use WithLog;
+
+    const CACHE_NONE = 0;
 
     ///
     /// Individual set of settings
@@ -85,6 +88,35 @@ class CommonSettings {
             $wgGroupPermissions[$group] = $permissions
                                         + $wgGroupPermissions[$group];
         }
+    }
+
+    /**
+     * Set the wiki in read-only mode
+     */
+    public static function setReadOnly (Option $readOnlyMessage) : void {
+        if ($readOnlyMessage->isNone() || PHP_SAPI === "cli") {
+            return;
+        }
+
+        global $wgReadOnly;
+        global $wgMessageCacheType;
+        global $wgMainCacheType;
+        global $wgParserCacheType;
+        global $wgSessionCacheType;
+        global $wgLocalisationCacheConf;
+        global $wgIgnoreImageErrors;
+
+        $wgReadOnly = $readOnlyMessage->getValue();
+
+        // DB caching
+        $wgMessageCacheType = self::CACHE_NONE;
+        $wgMainCacheType = self::CACHE_NONE;
+        $wgParserCacheType = self::CACHE_NONE;
+        $wgSessionCacheType = self::CACHE_NONE;
+        $wgLocalisationCacheConf["storeClass"] = "LCStoreNull";
+
+        // Thumbnails
+        $wgIgnoreImageErrors = true;
     }
 
     ///

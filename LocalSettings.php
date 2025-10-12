@@ -64,6 +64,7 @@ $wgConf->extractAllGlobals( $wgDBname );
 #   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 CommonSettings::fixGroupPermissions($saasExtraGroupPermissions);
+CommonSettings::setReadOnly($saasReadOnly);
 
 if ($saasUseScribunto) {
     CommonSettings::enableScribunto();

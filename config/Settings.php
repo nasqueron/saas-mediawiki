@@ -2,6 +2,8 @@
 
 namespace Nasqueron\SAAS\MediaWiki\Configuration;
 
+use Keruald\OmniTools\DataTypes\Option\None;
+
 class Settings extends MappableSettings {
 
     static public function getDatabaseMap () : array {
@@ -14,6 +16,14 @@ class Settings extends MappableSettings {
 
     static public function getMappedSettings () : array {
         return [
+
+            ///
+            /// Maintenance
+            ///
+
+            'saasReadOnly' => [
+                'default' => new None,
+            ],
 
             ///
             /// MediaWiki Core
