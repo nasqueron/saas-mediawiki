@@ -3,7 +3,6 @@
 namespace Nasqueron\SAAS\MediaWiki\Configuration;
 
 use Keruald\OmniTools\DataTypes\Option\None;
-use Keruald\OmniTools\DataTypes\Option\Some;
 
 class Settings extends MappableSettings {
 
@@ -24,8 +23,6 @@ class Settings extends MappableSettings {
 
             'saasReadOnly' => [
                 'default' => new None,
-
-                'wolfplex' => new Some("Maintenance to split database per [https://devcentral.nasqueron.org/T2140 T2140]."),
             ],
 
             ///
