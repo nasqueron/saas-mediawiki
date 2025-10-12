@@ -8,7 +8,7 @@ namespace Nasqueron\SAAS\MediaWiki\Configuration;
 /// Plan is to deploy the MediaWiki SaaS on a dedicated node.
 ///
 /// Meanwhile, as we share the main Nasqueron MySQL database,
-/// with an history of databases going back to 2001, we need
+/// with a history of databases going back to 2001, we need
 /// to map nicely named site key to actual databases names.
 
 abstract class MappableSettings {

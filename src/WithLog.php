@@ -23,7 +23,7 @@ trait WithLog {
                             'wiki',
                             'psr',
                             'web',
-                            // Disable introspection if you use an handler like
+                            // Disable introspection if you use a handler like
                             // FingersCrossedHandler with several log entries.
                             'introspection',
                         ],

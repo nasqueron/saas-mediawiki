@@ -7,7 +7,7 @@ trait WithExecutablesPathsFix {
     /**
      * Add settings to set binary paths for executables.
      *
-     * By default MediaWiki hardcodes Linux-centric paths for binaries.
+     * By default, MediaWiki hardcodes Linux-centric paths for binaries.
      * Other OSes could store elsewhere binaries, like in /usr/local/bin
      *
      * @param array $settings
