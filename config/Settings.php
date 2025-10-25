@@ -310,6 +310,11 @@ class Settings extends MappableSettings {
             /// Skins and extensions to load
             ///
 
+            'saasUseExtensionAllowlistHTMLTags' => [
+                'default' => false,
+                'agora' => true, // T2157
+            ],
+
             'saasUseExtensionCategoryTree' => [
                 'default' => true,
             ],
