@@ -3,6 +3,7 @@
 namespace Nasqueron\SAAS\MediaWiki\Configuration;
 
 use Keruald\OmniTools\DataTypes\Option\None;
+use Keruald\OmniTools\DataTypes\Option\Some;
 
 class Settings extends MappableSettings {
 
@@ -22,7 +23,7 @@ class Settings extends MappableSettings {
             ///
 
             'saasReadOnly' => [
-                'default' => new None,
+                'default' => new Some("Upgrade to MediaWiki 1.45 ongoing."),
             ],
 
             ///
