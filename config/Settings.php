@@ -340,6 +340,10 @@ class Settings extends MappableSettings {
                 'default' => true,
             ],
 
+            'saasUseExtensionTemplateSandbox' => [
+                'default' => true,
+            ],
+
             'saasUseExtensionWarnNotRecentlyUpdated' => [
                 'default' => false,
                 'agora' => true, // T1893
@@ -376,10 +380,6 @@ class Settings extends MappableSettings {
                 'default' => false,
                 'agora' => true,
                 'wolfplex' => true,
-            ],
-
-            'saasUseTemplateSandbox' => [
-                'default' => true,
             ],
         ];
     }
