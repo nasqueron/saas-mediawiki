@@ -377,6 +377,10 @@ class Settings extends MappableSettings {
                 'agora' => true,
                 'wolfplex' => true,
             ],
+
+            'saasUseTemplateSandbox' => [
+                'default' => true,
+            ],
         ];
     }
 
