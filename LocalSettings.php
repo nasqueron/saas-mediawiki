@@ -57,7 +57,7 @@ if (Environment::isBSD()) {
 $wgConf->extractAllGlobals( $wgDBname );
 
 #   -------------------------------------------------------------
-#   Fixes needed after extractings ettings
+#   Fixes needed after extracting settings
 #
 #   :: Group permissions
 #   :: Settings with common configuration
